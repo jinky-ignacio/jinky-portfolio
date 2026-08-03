@@ -3,148 +3,471 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Jinky M. Dimaculangan, Civil Engineer and Engineering Systems Builder." />
+  <meta name="description" content="Jinky M. Dimaculangan — Civil Engineer, Project Coordinator, and Engineering Systems Builder." />
+  <meta name="theme-color" content="#f5f1eb" />
   <title>Jinky M. Dimaculangan | Engineering Systems Builder</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="#home">JMD</a>
-      <nav>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container navigation">
+      <a class="brand" href="#top" aria-label="Jinky Dimaculangan home">
+        <span class="brand-mark">JD</span>
+        <span class="brand-name">Jinky Dimaculangan</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Let's Connect</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Civil Engineer · Systems Builder</p>
-          <h1>Jinky M. Dimaculangan</h1>
-          <p class="hero-copy">
-            I transform complex construction workflows into practical systems,
-            dashboards, and digital tools.
+    <section class="hero section-shell">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="kicker">Civil Engineer · Project Coordinator · Systems Builder</p>
+
+          <h1>
+            I build digital systems
+            <span>for construction.</span>
+          </h1>
+
+          <p class="hero-intro">
+            I combine real-world engineering experience with systems thinking,
+            automation, and software design to make complex project workflows
+            simpler, clearer, and more reliable.
           </p>
+
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
+            <a class="button button-dark" href="#work">
+              Explore my work
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="text-link" href="#about">
+              More about me <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-meta" aria-label="Professional highlights">
+            <div>
+              <strong>10+</strong>
+              <span>Years in construction</span>
+            </div>
+            <div>
+              <strong>70+</strong>
+              <span>Projects monitored</span>
+            </div>
+            <div>
+              <strong>4+</strong>
+              <span>Systems in development</span>
+            </div>
           </div>
         </div>
 
-        <div class="profile-card">
-          <div class="profile-placeholder">Add Photo</div>
-          <p>Project Coordination · Monitoring · Excel Systems · Automation</p>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <span class="portrait-initial">J</span>
+              <p>Professional photo<br>will go here</p>
+            </div>
+            <div class="floating-note note-top">
+              <span class="dot"></span>
+              Available for day-shift remote opportunities
+            </div>
+            <div class="floating-note note-bottom">
+              Civil engineering × digital systems
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
-        <p class="eyebrow">About</p>
-        <h2>Engineering experience backed by systems thinking.</h2>
-        <p>
-          I am a licensed Civil Engineer with more than ten years of experience
-          in construction project monitoring, coordination, documentation, and
-          reporting. I also design practical tools that simplify planning,
-          quantity estimation, workflows, and decision-making.
-        </p>
+      <div class="container scroll-prompt">
+        <span>Selected work</span>
+        <span class="scroll-line"></span>
       </div>
     </section>
 
-    <section id="projects" class="section alt">
+    <section class="selected-work section-shell" id="work">
       <div class="container">
-        <p class="eyebrow">Featured Work</p>
-        <h2>Selected Projects</h2>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <span class="project-number">01</span>
-            <h3>SkedFlow Pro</h3>
-            <p>
-              A construction scheduling and project planning system with Gantt,
-              PDM, critical path analysis, BOQ import, and reporting.
-            </p>
-            <a href="#" aria-label="View SkedFlow Pro project">Project page coming soon →</a>
-          </article>
-
-          <article class="project-card">
-            <span class="project-number">02</span>
-            <h3>QuantFlow</h3>
-            <p>
-              A quantity estimation and cost analysis system for concrete,
-              reinforcement, BOQ preparation, and engineering summaries.
-            </p>
-            <a href="#" aria-label="View QuantFlow project">Project page coming soon →</a>
-          </article>
-
-          <article class="project-card">
-            <span class="project-number">03</span>
-            <h3>Project Monitoring Systems</h3>
-            <p>
-              Dashboards, reporting tools, and documentation workflows designed
-              to improve project visibility and accuracy.
-            </p>
-            <a href="#" aria-label="View project monitoring systems">Project page coming soon →</a>
-          </article>
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Featured Projects</p>
+            <h2>Systems designed around real construction problems.</h2>
+          </div>
+          <p>
+            Each project started with a recurring workflow problem—then evolved
+            into a practical, structured digital solution.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <p class="eyebrow">Experience</p>
-        <h2>Professional Background</h2>
+        <article class="project-feature project-dark reveal">
+          <div class="project-content">
+            <div class="project-topline">
+              <span>01</span>
+              <span>Construction Planning</span>
+            </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <p class="timeline-date">2015–2026</p>
             <div>
+              <p class="project-label">SkedFlow Pro</p>
+              <h3>Planning, scheduling, and reporting in one connected workflow.</h3>
+              <p class="project-description">
+                An offline construction scheduling platform designed to simplify
+                activity planning, Gantt preparation, PDM networks, critical-path
+                analysis, BOQ imports, and formal project reporting.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <div class="tags">
+                <span>Scheduling</span>
+                <span>PDM</span>
+                <span>Reporting</span>
+              </div>
+              <a href="projects/skedflow.html">View case study <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="project-preview skedflow-preview" aria-label="SkedFlow interface mockup">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <p>SkedFlow Pro</p>
+            </div>
+            <div class="app-window">
+              <aside class="app-sidebar">
+                <strong>SF</strong>
+                <i></i><i></i><i></i><i></i><i></i>
+              </aside>
+              <div class="app-main">
+                <div class="dashboard-header">
+                  <div><small>PROJECT</small><strong>Construction Schedule</strong></div>
+                  <button>Generate Report</button>
+                </div>
+                <div class="metric-row">
+                  <div><small>Duration</small><strong>240 days</strong></div>
+                  <div><small>Activities</small><strong>46</strong></div>
+                  <div><small>Progress</small><strong>38.6%</strong></div>
+                </div>
+                <div class="gantt-card">
+                  <div class="gantt-labels">
+                    <span>Site Development</span>
+                    <span>Structural Works</span>
+                    <span>Architectural</span>
+                    <span>Utilities</span>
+                  </div>
+                  <div class="gantt-chart">
+                    <b style="--start:4%;--width:45%"></b>
+                    <b style="--start:18%;--width:54%"></b>
+                    <b style="--start:43%;--width:42%"></b>
+                    <b style="--start:56%;--width:36%"></b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-feature project-light reverse reveal">
+          <div class="project-content">
+            <div class="project-topline">
+              <span>02</span>
+              <span>Quantity Estimation</span>
+            </div>
+
+            <div>
+              <p class="project-label">QuantFlow</p>
+              <h3>Turning detailed quantities into clear engineering outputs.</h3>
+              <p class="project-description">
+                A structured estimating platform for concrete and reinforcement
+                quantities, BOQ development, cost analysis, rebar optimization,
+                bid summaries, and engineering reports.
+              </p>
+            </div>
+
+            <div class="project-footer">
+              <div class="tags">
+                <span>Estimating</span>
+                <span>Rebar</span>
+                <span>BOQ</span>
+              </div>
+              <a href="projects/quantflow.html">View case study <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="project-preview quantflow-preview" aria-label="QuantFlow interface mockup">
+            <div class="quant-title">
+              <div>
+                <small>QUANTFLOW</small>
+                <strong>Engineering Summary</strong>
+              </div>
+              <span>Core v1.0</span>
+            </div>
+            <div class="quant-body">
+              <div class="quant-nav">
+                <span class="active">Summary</span>
+                <span>Footings</span>
+                <span>Columns</span>
+                <span>Beams</span>
+                <span>Slabs</span>
+              </div>
+              <div class="quant-content">
+                <div class="quant-metrics">
+                  <div><small>Concrete</small><strong>186.40 m³</strong></div>
+                  <div><small>Reinforcement</small><strong>24,860 kg</strong></div>
+                </div>
+                <div class="bar-table">
+                  <div><span>Footings</span><b style="--amount:68%"></b><em>68%</em></div>
+                  <div><span>Columns</span><b style="--amount:46%"></b><em>46%</em></div>
+                  <div><span>Beams</span><b style="--amount:82%"></b><em>82%</em></div>
+                  <div><span>Slabs</span><b style="--amount:58%"></b><em>58%</em></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="secondary-projects">
+          <article class="mini-project reveal">
+            <div class="mini-visual monitoring-visual">
+              <span class="chart-line one"></span>
+              <span class="chart-line two"></span>
+              <span class="chart-line three"></span>
+              <div class="chart-label">Project Monitoring Dashboard</div>
+            </div>
+            <div class="mini-copy">
+              <p class="project-topline"><span>03</span><span>Operations</span></p>
+              <h3>Project Monitoring Systems</h3>
+              <p>
+                Dashboards and reporting workflows for tracking progress,
+                documentation, issues, and management decisions.
+              </p>
+              <a href="projects/monitoring.html">Explore project <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="mini-project reveal" data-delay="100">
+            <div class="mini-visual brainymom-visual">
+              <div class="bm-card bm-one">Content</div>
+              <div class="bm-card bm-two">Workflow</div>
+              <div class="bm-card bm-three">Automation</div>
+              <div class="chart-label">BrainyMom Operating System</div>
+            </div>
+            <div class="mini-copy">
+              <p class="project-topline"><span>04</span><span>Digital Operations</span></p>
+              <h3>BrainyMom OS</h3>
+              <p>
+                An integrated content-production system combining branding,
+                prompt libraries, planning, asset management, and automation.
+              </p>
+              <a href="projects/brainymom.html">Explore project <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-shell" id="about">
+      <div class="container about-layout">
+        <div class="about-statement reveal">
+          <p class="kicker">About Me</p>
+          <h2>
+            I understand the work because
+            <em>I have done the work.</em>
+          </h2>
+        </div>
+
+        <div class="about-copy reveal" data-delay="100">
+          <p class="lead">
+            Before building digital systems, I spent more than a decade
+            coordinating, monitoring, inspecting, documenting, and reporting
+            construction projects.
+          </p>
+          <p>
+            That background shapes how I design. I focus on clarity, practical
+            workflows, traceable information, and outputs that people can
+            actually use—not technology for technology's sake.
+          </p>
+          <p>
+            Today, I am bringing together civil engineering, project
+            coordination, Excel expertise, workflow design, AI, and software
+            development to create better tools for construction teams.
+          </p>
+
+          <div class="about-links">
+            <a href="#journey">View career journey <span>↓</span></a>
+            <a href="resume/Jinky-Dimaculangan-Resume.pdf" class="muted-link">Download résumé <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-section section-shell" id="journey">
+      <div class="container">
+        <div class="section-heading journey-heading reveal">
+          <div>
+            <p class="kicker">Career Journey</p>
+            <h2>From field execution to systems creation.</h2>
+          </div>
+        </div>
+
+        <div class="journey-list">
+          <article class="journey-item reveal">
+            <p class="journey-year">2010</p>
+            <div class="journey-node"></div>
+            <div>
+              <p class="journey-label">Foundation</p>
+              <h3>Licensed Civil Engineer</h3>
+              <p>
+                Built a professional foundation in construction execution,
+                engineering judgment, coordination, and technical documentation.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item reveal">
+            <p class="journey-year">2011–2015</p>
+            <div class="journey-node"></div>
+            <div>
+              <p class="journey-label">Industrial Construction</p>
+              <h3>Site Supervision and Planning</h3>
+              <p>
+                Supported multidisciplinary civil, mechanical, electrical, and
+                commissioning activities on large industrial projects.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item reveal">
+            <p class="journey-year">2015–2026</p>
+            <div class="journey-node"></div>
+            <div>
+              <p class="journey-label">Public Infrastructure</p>
               <h3>Engineer II · DPWH</h3>
               <p>
-                Project monitoring, field inspection, accomplishment validation,
-                reports, variation orders, schedule review, and coordination
-                across multiple public infrastructure projects.
+                Managed project monitoring, inspections, accomplishment
+                validation, reports, variations, time-related documents, and
+                cross-functional coordination across a high-volume portfolio.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <p class="timeline-date">Earlier Career</p>
+          <article class="journey-item reveal">
+            <p class="journey-year">Today</p>
+            <div class="journey-node active"></div>
             <div>
-              <h3>Construction and Project Planning</h3>
+              <p class="journey-label">Next Chapter</p>
+              <h3>Engineering Systems Builder</h3>
               <p>
-                Civil works supervision and project planning support for large
-                industrial and power plant projects.
+                Designing practical construction applications, dashboards,
+                automations, and digital products grounded in real workflows.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container narrow">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build better systems.</h2>
-        <p>
-          Replace the email below with your professional email address.
-        </p>
-        <a class="button primary" href="mailto:your-email@example.com">your-email@example.com</a>
+    <section class="capabilities-section section-shell">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Capabilities</p>
+            <h2>Where engineering and digital operations meet.</h2>
+          </div>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability reveal">
+            <span>01</span>
+            <h3>Project Coordination</h3>
+            <p>Schedules, workflows, stakeholder coordination, issue tracking, and delivery support.</p>
+          </article>
+          <article class="capability reveal" data-delay="60">
+            <span>02</span>
+            <h3>Monitoring & Reporting</h3>
+            <p>Progress validation, dashboards, management reports, documentation, and data visibility.</p>
+          </article>
+          <article class="capability reveal" data-delay="120">
+            <span>03</span>
+            <h3>Excel & Data Systems</h3>
+            <p>Structured workbooks, formulas, dashboards, templates, controls, and repeatable reporting systems.</p>
+          </article>
+          <article class="capability reveal" data-delay="180">
+            <span>04</span>
+            <h3>Workflow Automation</h3>
+            <p>AI-assisted processes, prompt systems, task flows, content pipelines, and operational automation.</p>
+          </article>
+          <article class="capability reveal" data-delay="240">
+            <span>05</span>
+            <h3>Product Development</h3>
+            <p>Problem definition, workflow architecture, UI planning, iterative testing, and application design.</p>
+          </article>
+          <article class="capability reveal" data-delay="300">
+            <span>06</span>
+            <h3>Construction Systems</h3>
+            <p>Scheduling, quantity estimation, resource planning, documentation, and project-control solutions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="kicker">Let's Work Together</p>
+          <h2>Have a construction workflow that needs a better system?</h2>
+        </div>
+
+        <div class="contact-side">
+          <p>
+            I am open to day-shift remote opportunities in project coordination,
+            construction operations, reporting, systems development, and
+            workflow improvement.
+          </p>
+          <a class="button button-light" href="mailto:your-email@example.com">
+            your-email@example.com <span>↗</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Jinky M. Dimaculangan</p>
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">JD</span>
+          <span class="brand-name">Jinky Dimaculangan</span>
+        </a>
+        <p>Civil Engineer · Project Coordinator · Engineering Systems Builder</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:your-email@example.com">Email</a>
+        <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn</a>
+        <a href="https://github.com/brainymomofficial-tech" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="resume/Jinky-Dimaculangan-Resume.pdf">Résumé</a>
+      </div>
+
+      <p class="copyright">© <span id="year"></span> Jinky M. Dimaculangan</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

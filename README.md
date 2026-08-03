@@ -1,20 +1,33 @@
-# Jinky Portfolio Starter
+# Jinky Portfolio v2.0
 
-A starter portfolio website for Jinky M. Dimaculangan.
+A premium personal portfolio for **Jinky M. Dimaculangan**.
 
-## Files
+## Upload instructions
 
-- `index.html` — website content
-- `style.css` — design and layout
-- `script.js` — small website behavior
+Upload everything inside this folder to the root of:
 
-## Publish with GitHub Pages
+`brainymomofficial-tech/jinky-portfolio`
 
-1. Upload the three files to your repository.
-2. Open repository **Settings**.
-3. Click **Pages**.
-4. Under **Build and deployment**, select:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /root
-5. Click **Save**.
+Important: Upload the folders too:
+
+- `assets`
+- `projects`
+- `resume`
+
+## Replace before final publishing
+
+Search the files for:
+
+- `your-email@example.com`
+- LinkedIn placeholder `href="#"`
+- Professional portrait placeholder
+- Résumé placeholder file
+
+## Current project pages
+
+- `projects/skedflow.html`
+- `projects/quantflow.html`
+- `projects/monitoring.html`
+- `projects/brainymom.html`
+
+The next production phase is replacing the interface mockups and case-study placeholders with real screenshots and final project content.
