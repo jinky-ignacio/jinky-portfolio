@@ -2,39 +2,39 @@
 
 .case-hero {
   min-height: 82vh;
-  padding: 178px 0 90px;
+  padding: 175px 0 90px;
   display: flex;
   align-items: end;
 }
 
 .case-hero h1 {
-  max-width: 920px;
+  max-width: 950px;
   font-family: "Playfair Display", serif;
   font-size: clamp(4rem, 9vw, 8rem);
   line-height: .95;
   letter-spacing: -.055em;
 }
 
-.case-hero p.case-intro {
+.case-intro {
   max-width: 760px;
-  margin-top: 30px;
-  color: var(--ink-soft);
-  font-size: 1.18rem;
+  margin-top: 28px;
+  color: var(--ink-2);
+  font-size: 1.16rem;
 }
 
 .case-meta {
-  margin-top: 50px;
-  padding-top: 28px;
+  margin-top: 48px;
+  padding-top: 26px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
   border-top: 1px solid var(--line);
 }
 
 .case-meta small {
   display: block;
   color: var(--muted);
-  font-size: .65rem;
+  font-size: .64rem;
   font-weight: 700;
   letter-spacing: .13em;
   text-transform: uppercase;
@@ -49,16 +49,14 @@
   min-height: 620px;
   display: grid;
   place-items: center;
-  color: rgba(255,255,255,.45);
+  color: rgba(255,255,255,.42);
   background: var(--dark);
   border-radius: 32px;
   font-family: "Playfair Display", serif;
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
-.case-section {
-  padding: 100px 0;
-}
+.case-section { padding: 100px 0; }
 
 .case-grid {
   display: grid;
@@ -78,13 +76,13 @@
 
 .case-body p {
   margin-bottom: 20px;
-  color: var(--ink-soft);
+  color: var(--ink-2);
 }
 
 .feature-list {
   margin-top: 34px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
@@ -109,8 +107,9 @@
 .back-link {
   display: inline-block;
   margin-top: 40px;
-  font-weight: 700;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--line);
+  font-weight: 700;
 }
 
 @media(max-width:800px) {
@@ -119,13 +118,9 @@
     grid-template-columns: 1fr;
   }
 
-  .case-grid {
-    gap: 35px;
-  }
+  .case-grid { gap: 35px; }
 
-  .case-banner {
-    min-height: 400px;
-  }
+  .case-banner { min-height: 400px; }
 }
 
 @media(max-width:560px) {

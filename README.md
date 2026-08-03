@@ -1,33 +1,35 @@
-# Jinky Portfolio v2.0
+# Project NOVA v3
 
-A premium personal portfolio for **Jinky M. Dimaculangan**.
+Premium portfolio website for **Jinky Ignacio**.
 
-## Upload instructions
+## Upload to GitHub
 
 Upload everything inside this folder to the root of:
 
 `brainymomofficial-tech/jinky-portfolio`
 
-Important: Upload the folders too:
+Make sure these folders remain intact:
 
 - `assets`
 - `projects`
 - `resume`
 
-## Replace before final publishing
+## Replace before final launch
 
-Search the files for:
+Search the project for:
 
 - `your-email@example.com`
 - LinkedIn placeholder `href="#"`
-- Professional portrait placeholder
-- Résumé placeholder file
+- Résumé placeholder
+- project screenshot placeholders
 
-## Current project pages
+## Main upgrades in v3
 
-- `projects/skedflow.html`
-- `projects/quantflow.html`
-- `projects/monitoring.html`
-- `projects/brainymom.html`
-
-The next production phase is replacing the interface mockups and case-study placeholders with real screenshots and final project content.
+- Jinky Ignacio branding
+- JI monogram
+- stronger value proposition
+- Project NOVA / engineering systems lab positioning
+- featured systems storytelling
+- How I Think section
+- signature closing statement
+- updated project pages

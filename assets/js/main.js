@@ -1,47 +1,47 @@
 const header = document.querySelector(".site-header");
-const menuButton = document.querySelector(".menu-button");
-const navigation = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links a");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
-const setHeaderState = () => {
+function updateHeader() {
   header.classList.toggle("scrolled", window.scrollY > 18);
-};
+}
 
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
+updateHeader();
+window.addEventListener("scroll", updateHeader, { passive: true });
 
-menuButton.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("open");
-  menuButton.classList.toggle("active", isOpen);
-  menuButton.setAttribute("aria-expanded", String(isOpen));
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.classList.toggle("active", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
   document.body.classList.toggle("menu-open", isOpen);
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("open");
-    menuButton.classList.remove("active");
-    menuButton.setAttribute("aria-expanded", "false");
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
   });
 });
 
-document.querySelectorAll("[data-delay]").forEach((element) => {
-  element.style.setProperty("--delay", `${element.dataset.delay}ms`);
+document.querySelectorAll("[data-delay]").forEach((el) => {
+  el.style.setProperty("--delay", `${el.dataset.delay}ms`);
 });
 
-const observer = new IntersectionObserver(
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+        revealObserver.unobserve(entry.target);
       }
     });
   },
   { threshold: 0.12 }
 );
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 document.getElementById("year").textContent = new Date().getFullYear();

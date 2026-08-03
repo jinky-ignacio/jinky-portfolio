@@ -1,5 +1,1 @@
-PLACEHOLDER ONLY
-
-Replace this file with the final resume and name it:
-
-Jinky-Dimaculangan-Resume.pdf
+Replace this placeholder with your final resume named Jinky-Ignacio-Resume.pdf
